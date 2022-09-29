@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  max-width: 980px;
+  margin: auto;
+  &__item {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  }
+  &__rectangle {
+    height: 250px;
+    background: grey;
+  }
+  &__label {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 0;
+  }
+}
